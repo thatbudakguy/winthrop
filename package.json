@@ -1,0 +1,27 @@
+{
+  "name": "winthrop",
+  "description": "data visualizations using the Princeton CDH's Winthrop Family on the Page project data.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatbudakguy/winthrop.git"
+  },
+  "author": {
+    "name": "Nick Budak",
+    "email": "budak@lclark.edu",
+    "url": "https://github.com/thatbudakguy"
+  },
+  "homepage": "https://github.com/thatbudakguy/winthrop#readme",
+  "private": true,
+  "scripts": {
+    "prestart": "npm install",
+    "start": "esw -w & browser-sync start -s -f '.'",
+    "lint": "esw"
+  },
+  "devDependencies": {
+    "browsersync": "0.0.1-security",
+    "eslint": "^4.12.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-watch": "^3.1.3"
+  },
+  "dependencies": {}
+}
