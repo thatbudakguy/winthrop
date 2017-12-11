@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/*.chart {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}*/
+
+/*.content {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}*/
