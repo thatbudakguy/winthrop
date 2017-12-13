@@ -1,90 +1,89 @@
-[
-    {
-      "label" : "[...] Flores: ex operibus [...] singulari iudicio selecti",
-      "data" : [4, 3, 1, 9]
-    },
-    {
-      "label" : "Ander Theil...Commentariorum, notarum, observationum & animadversionum in Johannis Poppii Chymische Medicin: darinnen alle Proceß mit Fleiß examiniret, von den Irrungen corrigiret, und mit etlich hundert newen Processen, geheimen Hand-Grieffen, aus eigener Erfahrung vermehret und illustriret auch der rechte und wahrhafftige Gebrauch der Artzneyen, mit etlich hundert Historien verificiret darneben was in Chirurgia und Alchymia oder transmutatione metallorum damit zu verrichten, gründlichen offenbahret allen Standes-Personen, Medicis, Chirurgis, Chymicis, Balbirern, Feld-Scherern, Roß-ärtzten, Goldschmieden, und zu gebrauchen : Hipp. de Elegantiâ : opportet sapientiam transferre ad medicinam, & medicinam ad sapientiam: medicus enim philosophus est Deo æqualis: mit Röm. Käyserl. Majest. und Churf. Sachs. Privilegiis",
-      "data" : [0, 2, 0, 1]
-    },
-    {
-      "label" : "Apocalypsis Iesu Christi, Revelata per angelum Domini, excepta atque conscripta a Ioanne Apostolo & Euangeliographo;  Brevi, perspicua, & methodica temporum & personarum designatione, exposita per Ioannem Foorthe",
-      "data" : [0, 3, 0, 0]
-    },
-    {
-      "label" : "Catalogus scriptorum Florentinorum omnis generis, quorum, et memoria extat atque lucubrationes in literas relatae sunt ad nostra usque tempora",
-      "data" : [0, 1, 0, 2]
-    },
-    {
-      "label" : "Cheiragogia Heliana  de Auro Philosophico necdem cognito: unde juxta facile percipi potest tum opus universalissimum totius Monarchiae Chymicae in Regno Minerali: tum omnes in suo quiq[ue] genere Universales ejusdem Regni Mineralis Lapides, Tincturave particulares: cujus author, Nicolaus Niger Hapelius, Anagrammatizomenus.  Accessit tractatus Venceslai Lavinii, Moravi, De Cœlo terrestri, &c",
-      "data" : [0, 1, 0, 0]
-    },
-    {
-      "label" : "Chronologia sacra (selections)",
-      "data" : [0, 1, 0, 18]
-    },
-    {
-      "label" : "Colloquiorum...familiarium opus aureum. Cum Scholiis quibusdam perquam eruditis, quae difficiliora passim loca diligenter explicant",
-      "data" : [2, 2, 0, 0]
-    },
-    {
-      "label" : "De republica Anglorum. The maner of Governement or policie of the Realme of England",
-      "data" : [9, 4, 0, 3]
-    },
-    {
-      "label" : "Fortalitium Scientiae (selections)",
-      "data" : [0, 2, 0, 0]
-    },
-    {
-      "label" : "Gallicae linguae institutio: Latino sermone conscripta [...]: nunc vero locupletata [...]",
-      "data" : [1, 1, 1, 0]
-    },
-    {
-      "label" : "Isagoge optica: cum disceptatione geometrica de vniuerso geometriae magisterio, hoc est, Geodaesia rectarum per radium, & aliis quaestionibus Philosophicis, iuxta auream P. Rami methodum concinnata, et in inclyta Marpurgensi Academia pro insignibus magisterii philosophici consequendis publice ad disputandum proposita sub praesidio philosophi acutissimi [...]",
-      "data" : [0, 1, 0, 0]
-    },
-    {
-      "label" : "L'elixir des philosophes, autrement, L'art transmutatoire, moult utile, attribué au Pape Jean XXII. de ce nom: non encores veu, ny imprimé par cy deuant",
-      "data" : [4, 0, 0, 0]
-    },
-    {
-      "label" : "Orbis Miraculum; or The Temple of Solomon, pourtrayed by Scripture-Light; wherein All its famous Buildings, the pompous Worship of the Jewes, with its attending Rites and Ceremonies; the several Officers employed in that Work, with their ample Revenues: and the Spiritual Mysteries vailed under all, are treated of at large. [separate frontispiece: ΙΕΡΟΝ ΣΟΛΟΜΩΝΤΟΣ: The Temple of Solomon Pourtrayed by Scripture Light]",
-      "data" : [1, 0, 0, 1]
-    },
-    {
-      "label" : "Princeps (selections)",
-      "data" : [0, 3, 0, 48]
-    },
-    {
-      "label" : "The complaint of Roderyck Mors, sometime a gray fryre, unto the parlamenthouse of Englande his naturall countrye: For the redresse of certeyne wicked lawes, euill customes [and] cruell decrees. A table whereof thou shalt finde in the nexte leafe",
-      "data" : [1, 1, 0, 0]
-    },
-    {
-      "label" : "The foure chiefest offices belonging to horsemanship: that is to saie, the office of the breeder, of the rider, of the keeper, and of the ferrer: in the first part whereof is declared, the order of breeding of horses : in the second, how to breake them, and to make them horses of seruice: conteining the whole art of riding latelie set forth, and now newlie corrected, and amended of manie faults escaped in the first printing, as well touching the bits, as otherwise: thirdlie, how to diet them, as well as when they rest, as when they trauell by the way: fourthlie, to what diseases they be subiect, togither with the causes of such diseases, the signes how to knowe them, and finallie how to cure the same: which bookes are not onlie painfullie collected out of a number of authours, but also orderlie disposed and applied to the vse of this our countrie [...]",
-      "data" : [1, 0, 0, 0]
-    },
-    {
-      "label" : "The image of governance compiled of the actes and sentences notable, of the moste noble Emperour Alexander Severus, late translated out of Greke into Englyshe",
-      "data" : [2, 1, 0, 0]
-    },
-    {
-      "label" : "The Roman historie: containing such acts and occurrents as passed under Constantius, Iulianus, Iovianus, Valentinianus, and Valens, emperours : digested into 18 bookes, the remains of 31 and written first in Latine by Ammianus Marcellinus, now translated newly into English   whereunto is annexed the chronologie, serving in stead of a briefe supplement of those former 13 bookes, which by the iniurie of time are lost   together with compendious annotations and coniectures upon such hard places as occurre in the said historie, done by Philemon Holland of the citie of Coventrie, Doctor in Physicke",
-      "data" : [0, 3, 0, 6]
-    },
-    {
-      "label" : "The Triall of Witch-craft, shewing the True and Right Methode of the Discovery, with A Confutation of erroneous wayes",
-      "data" : [14, 8, 0, 18]
-    },
-    {
-      "label" : "Triga chemica: De Lapide Philosophico tractatus tres",
-      "data" : [0, 0, 0, 2]
-    },
-    {
-      "label" : "Varietà  di secreti [. . . ]: ne' quali si contengono cose minerali, medecinali, profumi, belletti, artifitij, [et] alchimia: con altre bella curiosità aggiunte: di nuovo ristampati, [e] con somma diligenza corretti",
-      "data" : [1, 0, 0, 1]
-    },
-    {
-      "label" : "Veterinaria medicina (selections)",
-      "data" : [0, 3, 0, 0]
-    }
+[{
+    "label": "[...] Flores: ex operibus [...] singulari iudicio selecti",
+    "data": [4, 3, 1, 9]
+  },
+  {
+    "label": "Ander Theil...Commentariorum, notarum, observationum & animadversionum in Johannis Poppii Chymische Medicin: darinnen alle Proceß mit Fleiß examiniret, von den Irrungen corrigiret, und mit etlich hundert newen Processen, geheimen Hand-Grieffen, aus eigener Erfahrung vermehret und illustriret auch der rechte und wahrhafftige Gebrauch der Artzneyen, mit etlich hundert Historien verificiret darneben was in Chirurgia und Alchymia oder transmutatione metallorum damit zu verrichten, gründlichen offenbahret allen Standes-Personen, Medicis, Chirurgis, Chymicis, Balbirern, Feld-Scherern, Roß-ärtzten, Goldschmieden, und zu gebrauchen : Hipp. de Elegantiâ : opportet sapientiam transferre ad medicinam, & medicinam ad sapientiam: medicus enim philosophus est Deo æqualis: mit Röm. Käyserl. Majest. und Churf. Sachs. Privilegiis",
+    "data": [0, 2, 0, 1]
+  },
+  {
+    "label": "Apocalypsis Iesu Christi, Revelata per angelum Domini, excepta atque conscripta a Ioanne Apostolo & Euangeliographo;  Brevi, perspicua, & methodica temporum & personarum designatione, exposita per Ioannem Foorthe",
+    "data": [0, 3, 0, 0]
+  },
+  {
+    "label": "Catalogus scriptorum Florentinorum omnis generis, quorum, et memoria extat atque lucubrationes in literas relatae sunt ad nostra usque tempora",
+    "data": [0, 1, 0, 2]
+  },
+  {
+    "label": "Cheiragogia Heliana  de Auro Philosophico necdem cognito: unde juxta facile percipi potest tum opus universalissimum totius Monarchiae Chymicae in Regno Minerali: tum omnes in suo quiq[ue] genere Universales ejusdem Regni Mineralis Lapides, Tincturave particulares: cujus author, Nicolaus Niger Hapelius, Anagrammatizomenus.  Accessit tractatus Venceslai Lavinii, Moravi, De Cœlo terrestri, &c",
+    "data": [0, 1, 0, 0]
+  },
+  {
+    "label": "Chronologia sacra (selections)",
+    "data": [0, 1, 0, 18]
+  },
+  {
+    "label": "Colloquiorum...familiarium opus aureum. Cum Scholiis quibusdam perquam eruditis, quae difficiliora passim loca diligenter explicant",
+    "data": [2, 2, 0, 0]
+  },
+  {
+    "label": "De republica Anglorum. The maner of Governement or policie of the Realme of England",
+    "data": [9, 4, 0, 3]
+  },
+  {
+    "label": "Fortalitium Scientiae (selections)",
+    "data": [0, 2, 0, 0]
+  },
+  {
+    "label": "Gallicae linguae institutio: Latino sermone conscripta [...]: nunc vero locupletata [...]",
+    "data": [1, 1, 1, 0]
+  },
+  {
+    "label": "Isagoge optica: cum disceptatione geometrica de vniuerso geometriae magisterio, hoc est, Geodaesia rectarum per radium, & aliis quaestionibus Philosophicis, iuxta auream P. Rami methodum concinnata, et in inclyta Marpurgensi Academia pro insignibus magisterii philosophici consequendis publice ad disputandum proposita sub praesidio philosophi acutissimi [...]",
+    "data": [0, 1, 0, 0]
+  },
+  {
+    "label": "L'elixir des philosophes, autrement, L'art transmutatoire, moult utile, attribué au Pape Jean XXII. de ce nom: non encores veu, ny imprimé par cy deuant",
+    "data": [4, 0, 0, 0]
+  },
+  {
+    "label": "Orbis Miraculum; or The Temple of Solomon, pourtrayed by Scripture-Light; wherein All its famous Buildings, the pompous Worship of the Jewes, with its attending Rites and Ceremonies; the several Officers employed in that Work, with their ample Revenues: and the Spiritual Mysteries vailed under all, are treated of at large. [separate frontispiece: ΙΕΡΟΝ ΣΟΛΟΜΩΝΤΟΣ: The Temple of Solomon Pourtrayed by Scripture Light]",
+    "data": [1, 0, 0, 1]
+  },
+  {
+    "label": "Princeps (selections)",
+    "data": [0, 3, 0, 48]
+  },
+  {
+    "label": "The complaint of Roderyck Mors, sometime a gray fryre, unto the parlamenthouse of Englande his naturall countrye: For the redresse of certeyne wicked lawes, euill customes [and] cruell decrees. A table whereof thou shalt finde in the nexte leafe",
+    "data": [1, 1, 0, 0]
+  },
+  {
+    "label": "The foure chiefest offices belonging to horsemanship: that is to saie, the office of the breeder, of the rider, of the keeper, and of the ferrer: in the first part whereof is declared, the order of breeding of horses : in the second, how to breake them, and to make them horses of seruice: conteining the whole art of riding latelie set forth, and now newlie corrected, and amended of manie faults escaped in the first printing, as well touching the bits, as otherwise: thirdlie, how to diet them, as well as when they rest, as when they trauell by the way: fourthlie, to what diseases they be subiect, togither with the causes of such diseases, the signes how to knowe them, and finallie how to cure the same: which bookes are not onlie painfullie collected out of a number of authours, but also orderlie disposed and applied to the vse of this our countrie [...]",
+    "data": [1, 0, 0, 0]
+  },
+  {
+    "label": "The image of governance compiled of the actes and sentences notable, of the moste noble Emperour Alexander Severus, late translated out of Greke into Englyshe",
+    "data": [2, 1, 0, 0]
+  },
+  {
+    "label": "The Roman historie: containing such acts and occurrents as passed under Constantius, Iulianus, Iovianus, Valentinianus, and Valens, emperours : digested into 18 bookes, the remains of 31 and written first in Latine by Ammianus Marcellinus, now translated newly into English   whereunto is annexed the chronologie, serving in stead of a briefe supplement of those former 13 bookes, which by the iniurie of time are lost   together with compendious annotations and coniectures upon such hard places as occurre in the said historie, done by Philemon Holland of the citie of Coventrie, Doctor in Physicke",
+    "data": [0, 3, 0, 6]
+  },
+  {
+    "label": "The Triall of Witch-craft, shewing the True and Right Methode of the Discovery, with A Confutation of erroneous wayes",
+    "data": [14, 8, 0, 18]
+  },
+  {
+    "label": "Triga chemica: De Lapide Philosophico tractatus tres",
+    "data": [0, 0, 0, 2]
+  },
+  {
+    "label": "Varietà  di secreti [. . . ]: ne' quali si contengono cose minerali, medecinali, profumi, belletti, artifitij, [et] alchimia: con altre bella curiosità aggiunte: di nuovo ristampati, [e] con somma diligenza corretti",
+    "data": [1, 0, 0, 1]
+  },
+  {
+    "label": "Veterinaria medicina (selections)",
+    "data": [0, 3, 0, 0]
+  }
 ]
