@@ -1,14 +1,6 @@
 /* eslint-disable max-len */
 
-let options = {
-  type: 'pie',
-  labels: [
-    'English',
-    'Latin',
-    'Greek',
-    'Symbol',
-  ],
-  palettes: {
+let palettes = {
     a: [
       '#2E2D4D',
       '#337357',
@@ -21,94 +13,112 @@ let options = {
       '#36a2eb',
       '#4f7942',
     ],
-  },
 }
 
-let type = Rx.Observable.of(options.type)
-let colors = Rx.Observable.of(options.palettes.a)
-let labels = Rx.Observable.of(options.labels)
-
-let json = Rx.Observable.fromPromise($.getJSON('languages.json'))
-// let books = datasets.flatMap(Rx.Observable.from)
-let datasets = Rx.Observable.combineLatest(json, colors,
-    (json, colors) => json.map((book) => {
-        return {
-            label: book.label,
-            data: book.data,
-            backgroundColor: colors
-        }
-    })
-)
-
-let chart = Rx.Observable.combineLatest(type, datasets, labels,
-    (type, datasets, labels) => {
-    return {
-        type: type,
-        data: {
-            labels: labels,
-            datasets: datasets
-        },
-        options: {
-            legend: {
-                display: true
-            }
+let pieChart = new Chart($('#winthrop'), {
+    type: 'pie',
+    data: {
+        labels: [
+            'English',
+            'Latin',
+            'Greek',
+            'Symbol',
+        ],
+        datasets: []
+    },
+    options: {
+        legend: {
+            display: true
         }
     }
 })
 
-chart.subscribe((chart) => new Chart($('#winthrop'), chart))
+let barChart = new Chart($('#bars'), {
+    type: 'horizontalBar',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'annotations',
+            data: [],
+            backgroundColor: palettes.b
+        }]
+    }
+})
 
-// let languagesChart = new Chart($('#winthrop'), {
-//   type: 'pie',
-//   data: {
-//     labels: ['English', 'Latin', 'Greek', 'Symbol'],
-//     datasets: [{
-//         label: 'Princeps (selections)',
-//         data: [0, 3, 0, 48],
-//         backgroundColor: colorMap,
-//       },
-//       {
-//         label: 'The Triall of Witch-craft, shewing the True and Right Methode of the Discovery, with A Confutation of erroneous wayes',
-//         data: [14, 8, 0, 18],
-//         backgroundColor: colorMap,
-//       },
-//       {
-//         label: 'Chronologia sacra (selections)',
-//         data: [0, 1, 0, 18],
-//         backgroundColor: colorMap,
-//       },
-//       {
-//         label: '[...] Flores: ex operibus [...] singulari iudicio selecti',
-//         data: [4, 3, 1, 9],
-//         backgroundColor: colorMap,
-//       },
-//       {
-//         label: 'De republica Anglorum. The maner of Governement or policie of the Realme of England',
-//         data: [9, 4, 0, 3],
-//         backgroundColor: colorMap,
-//       },
-//     ],
-//   },
-//   options: {
-//     legend: {
-//       display: true,
-//     },
-//   },
-// })
-//
-// let booksList = languagesChart.data.datasets.map((ds) => {
-//     return `<li class="list-group-item"><i>${ds.label}</i></li>`
-// }).join('')
-//
-// $('.books-list').html(booksList)
-//
-// $('.non-na').click((e) => {
-//   languagesChart.data.datasets = languagesChart.data.datasets.map((ds) => {
-//     return {
-//       label: ds.label,
-//       data: ds.data.slice(0, 3),
-//       backgroundColor: ds.backgroundColor,
-//     }
-//   })
-//   languagesChart.update()
-// })
+let dataStream = Rx.Observable
+    .fromPromise($.getJSON('languages.json'))
+    .flatMap(Rx.Observable.from)
+    .map((book) => {
+        return {
+            label: book.label,
+            data: book.data,
+            backgroundColor: palettes.a
+        }
+    })
+    .toArray()
+    .map((books) => {
+        return books.sort((a, b) => {
+            return b.data.reduce((acc, cur) => acc + cur) - a.data.reduce((acc, cur) => acc + cur)
+        })
+    })
+    .flatMap(Rx.Observable.from)
+    .take(5)
+    .toArray()
+
+dataStream.first().subscribe((datasets) => {
+    datasets.map((book) => pieChart.data.datasets.push(book))
+    pieChart.update()
+})
+
+let buttonStream = Rx.Observable.fromEvent($('.symbol-vis'), 'click')
+
+let combinedStream = Rx.Observable
+    .combineLatest(dataStream, buttonStream, (datasets) => {
+        if ($('.symbol-vis').hasClass('show')) {
+            return datasets.map((book) => {
+                return {
+                    label: book.label,
+                    data: book.data.slice(0, 3),
+                    backgroundColor: palettes.a
+                }
+            })
+        }
+        return datasets
+    })
+
+let barStream = combinedStream
+    .flatMap(Rx.Observable.from)
+    .map((book) => {
+        return {
+            label: 'annotations',
+            data: book.data.reduce((acc, cur) => acc + cur),
+            backgroundColor: palettes.b
+        }
+    })
+
+barStream.subscribe((datasets) => {
+    pieChart.data.datasets.forEach((book) => book.data.pop())
+    pieChart.data.datasets.forEach((book, i) => book.data.push(datasets[i].data))
+    pieChart.update()
+})
+
+combinedStream.subscribe((datasets) => {
+    if ($('.symbol-vis').hasClass('hide')) {
+        pieChart.data.labels.push('Symbol')
+    }
+    else {
+        pieChart.data.labels.pop()
+    }
+    pieChart.data.datasets.forEach((book) => book.data.pop())
+    pieChart.data.datasets.forEach((book, i) => book.data.push(datasets[i].data))
+    pieChart.update()
+})
+
+buttonStream.subscribe((e) => {
+    $('.symbol-vis')
+        .toggleClass('hide')
+        .toggleClass('show')
+        .text(() => {
+            return $('.symbol-vis').text() === 'Hide symbols' ? 'Show symbols' : 'Hide symbols'
+        })
+})
