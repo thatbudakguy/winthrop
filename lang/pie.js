@@ -1,41 +1,3 @@
-function updatePieChart(datasets) {
-    clearPieChart()
-    fillPieChart(datasets)
-}
-
-function fillPieChart(datasets) {
-    datasets.forEach((book, i) => {
-        book.data.forEach((language) => {
-            pieChart.data.datasets[i].data.push(language)
-        })
-    })
-    pieChart.update()
-}
-
-function clearPieChart() {
-    // pieChart.data.labels.forEach((label) => label.pop())
-    datasets.forEach((book, i) => {
-        // console.log('deleting', book)
-        book.data.forEach((language) => {
-            pieChart.data.datasets[i].data.pop()
-        })
-    })
-    pieChart.update()
-}
-
-function populatePieChart(datasets) {
-    datasets.forEach((book) => pieChart.data.datasets.push(book))
-    pieChart.update()
-}
-
-function toggleSymbolsButton() {
-    let newText = symbolButton.text() === 'Hide symbols' ? 'Show symbols' : 'Hide symbols'
-    symbolButton
-        .toggleClass('hide')
-        .toggleClass('show')
-        .text(newText)
-}
-
 // Set color palette
 let palette = [
   '#ff6384', // English
@@ -83,56 +45,62 @@ let datasetStream = Rx.Observable
             return b.data.reduce((acc, cur) => acc + cur) - a.data.reduce((acc, cur) => acc + cur)
         })
     })
-    // .flatMap(Rx.Observable.from) // convert array back into sequence
     .map((arr) => {
-        return arr.slice(0, 5)
+        return arr.slice(0, 5) // limit to top 5 books by annotation count
     })
-    // .take(5) // limit to top 5 books by annotation count
-    // .toArray() // flatten sequence into array again
 
 // Create a version that doesn't include symbol data
 let nonSymbolStream = Rx.Observable
-    .fromPromise($.getJSON('languages.json')) // async load json
-    .flatMap(Rx.Observable.from) // convert flat array into sequence
+    .fromPromise($.getJSON('languages.json'))
+    .flatMap(Rx.Observable.from)
     .map((book) => {
         return {
             label: book.label,
-            data: book.data.slice(0, 3),
-            backgroundColor: palette // add color to each book dataset
+            data: book.data.slice(0, 3), // don't include symbol data
+            backgroundColor: palette
         }
     })
-    .toArray() // flatten sequence back into array
+    .toArray()
     .map((books) => {
-        return books.sort((a, b) => { // sort book datasets by total annotation count
+        return books.sort((a, b) => {
             return b.data.reduce((acc, cur) => acc + cur) - a.data.reduce((acc, cur) => acc + cur)
         })
     })
-    // .flatMap(Rx.Observable.from) // convert array back into sequence
     .map((arr) => {
         return arr.slice(0, 5)
     })
-    // .take(5) // limit to top 5 books by annotation count
-    // .toArray() // flatten sequence into array again
 
 // Capture button clicks as Observable
 let buttonStream = Rx.Observable.fromEvent(symbolButton, 'click')
 
+// Get latest values when the button is clicked
 let combinedStream = Rx.Observable
     .combineLatest(buttonStream, datasetStream, nonSymbolStream)
 
+// Populate the pie chart initially
 datasetStream
     .take(1)
-    .subscribe(populatePieChart)
+    .subscribe((datasets) => {
+        datasets.forEach((book) => pieChart.data.datasets.push(book))
+        pieChart.update()
+    })
 
+// Watch for button presses and load the appropriate datastream
 combinedStream.subscribe(([e, ds, ns]) => {
     if ($(e.target).hasClass('hide')) {
-        // console.log('showing', ds, ns)
-        updatePieChart(ds)
+        pieChart.data.datasets = ds
     }
     else {
-        // console.log('hiding', ds, ns)
-        updatePieChart(ns)
+        pieChart.data.datasets = ns
     }
+    pieChart.update()
 })
 
-buttonStream.subscribe(toggleSymbolsButton)
+// Update the button's html on button presses
+buttonStream.subscribe(() => {
+    let newText = symbolButton.text() === 'Hide symbols' ? 'Show symbols' : 'Hide symbols'
+    symbolButton
+        .toggleClass('hide')
+        .toggleClass('show')
+        .text(newText)
+})
