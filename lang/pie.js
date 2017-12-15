@@ -78,7 +78,7 @@ let combinedStream = Rx.Observable
     .combineLatest(buttonStream, datasetStream, nonSymbolStream)
 
 // Populate the pie chart initially
-datasetStream
+nonSymbolStream
     .take(1)
     .subscribe((datasets) => {
         datasets.forEach((book) => pieChart.data.datasets.push(book))
@@ -88,6 +88,7 @@ datasetStream
 // Watch for button presses and load the appropriate datastream
 combinedStream.subscribe(([e, ds, ns]) => {
     if ($(e.target).hasClass('hide')) {
+        console.log(ds)
         pieChart.data.datasets = ds
     }
     else {

@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Languages <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/lang">Languages <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Books</a>
+                    <a class="nav-link" href="/map">Books</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">People</a>
+                    <a class="nav-link" href="/people">People</a>
                 </li>
             </ul>
         </div>
@@ -43,11 +43,28 @@
             <div class="col">
                 <div class="jumbotron">
                     <h1 class="display-5">Annotation languages</h1>
-                    <p class="lead">These charts show the languages the Winthrop family used to make their annotations by book. Click below to toggle the inclusion of symbolic annotations.</p>
-                    <a class="btn btn-primary symbol-vis show" href="#" role="button">Hide symbols</a>
+                    <p class="lead">These charts show the languages the Winthrop family used to make their annotations by book. The largest circle represents the book with the most annotations (see rankings below). Click the button to toggle the inclusion of symbolic
+                        annotations (e.g. dash marks).</p>
+                    <a class="btn btn-primary symbol-vis hide" href="#" role="button">Show symbols</a>
                     <hr class="my-4">
-                    <p>Books ranked by annotation volume:</p>
-                    <canvas id="bars" height="250"></canvas>
+                    <p> Top 5 books ranked by annotation volume:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i>Princeps (selections)</i> (<b>51</b>)
+                        </li>
+                        <li class="list-group-item">
+                            <i>The Triall of Witch-craft, shewing the True and Right Methode of the Discovery, with A Confutation of erroneous wayes</i> (<b>40</b>)
+                        </li>
+                        <li class="list-group-item">
+                            <i>[...] Flores: ex operibus [...] singulari iudicio selecti</i> (<b>22</b>)
+                        </li>
+                        <li class="list-group-item">
+                            <i>Chronologia sacra (selections)</i> (<b>19</b>)
+                        </li>
+                        <li class="list-group-item">
+                            <i>De republica Anglorum. The maner of Governement or policie of the Realme of England</i> (<b>16</b>)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
