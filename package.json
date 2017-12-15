@@ -13,12 +13,11 @@
   "homepage": "https://github.com/thatbudakguy/winthrop#readme",
   "private": true,
   "scripts": {
-    "prestart": "npm install",
-    "start": "esw -w & browser-sync start -s -f '.'",
+    "start": "esw -w & browser-sync start -s -f '., !node_modules'",
     "lint": "esw"
   },
   "devDependencies": {
-    "browsersync": "0.0.1-security",
+    "browser-sync": "^2.18.13",
     "eslint": "^4.12.1",
     "eslint-config-google": "^0.9.1",
     "eslint-watch": "^3.1.3"

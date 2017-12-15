@@ -1,0 +1,160 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [{
+      "type": "Feature",
+      "properties": {
+        "publication place": "Florence",
+        "latitude": 43.7695604,
+        "longitude": 11.2558136,
+        "books": ["Catalogus scriptorum Florentinorum omnis generis, quorum, et memoria extat atque lucubrationes in literas relatae sunt ad nostra usque tempora (1589)"],
+        "titles": ["Catalogus scriptorum Florentinorum omnis generis, quorum, et memoria extat atque lucubrationes in literas relatae sunt ad nostra usque tempora"],
+        "dates": ["1589"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.2558136, 43.7695604]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Frankfurt",
+        "latitude": 50.1109221,
+        "longitude": 8.6821267,
+        "books": ["Isagoge optica: cum disceptatione geometrica de vniuerso geometriae magisterio, hoc est, Geodaesia rectarum per radium, & aliis quaestionibus Philosophicis, iuxta auream P. Rami methodum concinnata, et in inclyta Marpurgensi Academia pro insignibus magisterii philosophici consequendis publice ad disputandum proposita sub praesidio philosophi acutissimi [...] (1593)"],
+        "titles": ["Isagoge optica: cum disceptatione geometrica de vniuerso geometriae magisterio, hoc est, Geodaesia rectarum per radium, & aliis quaestionibus Philosophicis, iuxta auream P. Rami methodum concinnata, et in inclyta Marpurgensi Academia pro insignibus magisterii philosophici consequendis publice ad disputandum proposita sub praesidio philosophi acutissimi [...]"],
+        "dates": ["1593"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.6821267, 50.1109221]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Geneva",
+        "latitude": 46.2043907,
+        "longitude": 6.1431577,
+        "books": ["[...] Flores: ex operibus [...] singulari iudicio selecti (1613)"],
+        "titles": ["[...] Flores: ex operibus [...] singulari iudicio selecti"],
+        "dates": ["1613"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.1431577, 46.2043907]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Leiden",
+        "latitude": 52.1601144,
+        "longitude": 4.4970097,
+        "books": ["Triga chemica: De Lapide Philosophico tractatus tres (1599)"],
+        "titles": ["Triga chemica: De Lapide Philosophico tractatus tres"],
+        "dates": ["1599"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.4970097, 52.1601144]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Leipzig",
+        "latitude": 51.3396955,
+        "longitude": 12.3730747,
+        "books": ["Ander Theil...Commentariorum, notarum, observationum & animadversionum in Johannis Poppii Chymische Medicin: darinnen alle Proceß mit Fleiß examiniret, von den Irrungen corrigiret, und mit etlich hundert newen Processen, geheimen Hand-Grieffen, aus eigener Erfahrung vermehret und illustriret auch der rechte und wahrhafftige Gebrauch der Artzneyen, mit etlich hundert Historien verificiret darneben was in Chirurgia und Alchymia oder transmutatione metallorum damit zu verrichten, gründlichen offenbahret allen Standes-Personen, Medicis, Chirurgis, Chymicis, Balbirern, Feld-Scherern, Roß-ärtzten, Goldschmieden, und zu gebrauchen : Hipp. de Elegantiâ : opportet sapientiam transferre ad medicinam, & medicinam ad sapientiam: medicus enim philosophus est Deo æqualis: mit Röm. Käyserl. Majest. und Churf. Sachs. Privilegiis (1639)"],
+        "titles": ["Ander Theil...Commentariorum, notarum, observationum & animadversionum in Johannis Poppii Chymische Medicin: darinnen alle Proceß mit Fleiß examiniret, von den Irrungen corrigiret, und mit etlich hundert newen Processen, geheimen Hand-Grieffen, aus eigener Erfahrung vermehret und illustriret auch der rechte und wahrhafftige Gebrauch der Artzneyen, mit etlich hundert Historien verificiret darneben was in Chirurgia und Alchymia oder transmutatione metallorum damit zu verrichten, gründlichen offenbahret allen Standes-Personen, Medicis, Chirurgis, Chymicis, Balbirern, Feld-Scherern, Roß-ärtzten, Goldschmieden, und zu gebrauchen : Hipp. de Elegantiâ : opportet sapientiam transferre ad medicinam, & medicinam ad sapientiam: medicus enim philosophus est Deo æqualis: mit Röm. Käyserl. Majest. und Churf. Sachs. Privilegiis"],
+        "dates": ["1639"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3730747, 51.3396955]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "London",
+        "latitude": 51.5073509,
+        "longitude": -0.1277583,
+        "books": ["Apocalypsis Iesu Christi, Revelata per angelum Domini, excepta atque conscripta a Ioanne Apostolo & Euangeliographo;  Brevi, perspicua, & methodica temporum & personarum designatione, exposita per Ioannem Foorthe (1597)", "Colloquiorum...familiarium opus aureum. Cum Scholiis quibusdam perquam eruditis, quae difficiliora passim loca diligenter explicant (1727)", "De republica Anglorum. The maner of Governement or policie of the Realme of England (1584)", "Orbis Miraculum; or The Temple of Solomon, pourtrayed by Scripture-Light; wherein All its famous Buildings, the pompous Worship of the Jewes, with its attending Rites and Ceremonies; the several Officers employed in that Work, with their ample Revenues: and the Spiritual Mysteries vailed under all, are treated of at large. [separate frontispiece: ΙΕΡΟΝ ΣΟΛΟΜΩΝΤΟΣ: The Temple of Solomon Pourtrayed by Scripture Light] (1659)", "The complaint of Roderyck Mors, sometime a gray fryre, unto the parlamenthouse of Englande his naturall countrye: For the redresse of certeyne wicked lawes, euill customes [and] cruell decrees. A table whereof thou shalt finde in the nexte leafe (1560)", "The foure chiefest offices belonging to horsemanship: that is to saie, the office of the breeder, of the rider, of the keeper, and of the ferrer: in the first part whereof is declared, the order of breeding of horses : in the second, how to breake them, and to make them horses of seruice: conteining the whole art of riding latelie set forth, and now newlie corrected, and amended of manie faults escaped in the first printing, as well touching the bits, as otherwise: thirdlie, how to diet them, as well as when they rest, as when they trauell by the way: fourthlie, to what diseases they be subiect, togither with the causes of such diseases, the signes how to knowe them, and finallie how to cure the same: which bookes are not onlie painfullie collected out of a number of authours, but also orderlie disposed and applied to the vse of this our countrie [...] (1580)", "The image of governance compiled of the actes and sentences notable, of the moste noble Emperour Alexander Severus, late translated out of Greke into Englyshe (1541)", "The Roman historie: containing such acts and occurrents as passed under Constantius, Iulianus, Iovianus, Valentinianus, and Valens, emperours : digested into 18 bookes, the remains of 31 and written first in Latine by Ammianus Marcellinus, now translated newly into English   whereunto is annexed the chronologie, serving in stead of a briefe supplement of those former 13 bookes, which by the iniurie of time are lost   together with compendious annotations and coniectures upon such hard places as occurre in the said historie, done by Philemon Holland of the citie of Coventrie, Doctor in Physicke (1609)", "The Triall of Witch-craft, shewing the True and Right Methode of the Discovery, with A Confutation of erroneous wayes (1616)"],
+        "titles": ["Apocalypsis Iesu Christi, Revelata per angelum Domini, excepta atque conscripta a Ioanne Apostolo & Euangeliographo;  Brevi, perspicua, & methodica temporum & personarum designatione, exposita per Ioannem Foorthe", "Colloquiorum...familiarium opus aureum. Cum Scholiis quibusdam perquam eruditis, quae difficiliora passim loca diligenter explicant", "De republica Anglorum. The maner of Governement or policie of the Realme of England", "Orbis Miraculum; or The Temple of Solomon, pourtrayed by Scripture-Light; wherein All its famous Buildings, the pompous Worship of the Jewes, with its attending Rites and Ceremonies; the several Officers employed in that Work, with their ample Revenues: and the Spiritual Mysteries vailed under all, are treated of at large. [separate frontispiece: ΙΕΡΟΝ ΣΟΛΟΜΩΝΤΟΣ: The Temple of Solomon Pourtrayed by Scripture Light]", "The complaint of Roderyck Mors, sometime a gray fryre, unto the parlamenthouse of Englande his naturall countrye: For the redresse of certeyne wicked lawes, euill customes [and] cruell decrees. A table whereof thou shalt finde in the nexte leafe", "The foure chiefest offices belonging to horsemanship: that is to saie, the office of the breeder, of the rider, of the keeper, and of the ferrer: in the first part whereof is declared, the order of breeding of horses : in the second, how to breake them, and to make them horses of seruice: conteining the whole art of riding latelie set forth, and now newlie corrected, and amended of manie faults escaped in the first printing, as well touching the bits, as otherwise: thirdlie, how to diet them, as well as when they rest, as when they trauell by the way: fourthlie, to what diseases they be subiect, togither with the causes of such diseases, the signes how to knowe them, and finallie how to cure the same: which bookes are not onlie painfullie collected out of a number of authours, but also orderlie disposed and applied to the vse of this our countrie [...]", "The image of governance compiled of the actes and sentences notable, of the moste noble Emperour Alexander Severus, late translated out of Greke into Englyshe", "The Roman historie: containing such acts and occurrents as passed under Constantius, Iulianus, Iovianus, Valentinianus, and Valens, emperours : digested into 18 bookes, the remains of 31 and written first in Latine by Ammianus Marcellinus, now translated newly into English   whereunto is annexed the chronologie, serving in stead of a briefe supplement of those former 13 bookes, which by the iniurie of time are lost   together with compendious annotations and coniectures upon such hard places as occurre in the said historie, done by Philemon Holland of the citie of Coventrie, Doctor in Physicke", "The Triall of Witch-craft, shewing the True and Right Methode of the Discovery, with A Confutation of erroneous wayes"],
+        "dates": ["1597", "1727", "1584", "1659", "1560", "1580", "1541", "1609", "1616"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.1277583, 51.5073509]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Lyon",
+        "latitude": 45.764043,
+        "longitude": 4.835659,
+        "books": ["L'elixir des philosophes, autrement, L'art transmutatoire, moult utile, attribué au Pape Jean XXII. de ce nom: non encores veu, ny imprimé par cy deuant (1557)"],
+        "titles": ["L'elixir des philosophes, autrement, L'art transmutatoire, moult utile, attribué au Pape Jean XXII. de ce nom: non encores veu, ny imprimé par cy deuant"],
+        "dates": ["1557"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.835659, 45.764043]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Marburg",
+        "latitude": 50.8021728,
+        "longitude": 8.7667933,
+        "books": ["Cheiragogia Heliana  de Auro Philosophico necdem cognito: unde juxta facile percipi potest tum opus universalissimum totius Monarchiae Chymicae in Regno Minerali: tum omnes in suo quiq[ue] genere Universales ejusdem Regni Mineralis Lapides, Tincturave particulares: cujus author, Nicolaus Niger Hapelius, Anagrammatizomenus.  Accessit tractatus Venceslai Lavinii, Moravi, De Cœlo terrestri, &c (1612)"],
+        "titles": ["Cheiragogia Heliana  de Auro Philosophico necdem cognito: unde juxta facile percipi potest tum opus universalissimum totius Monarchiae Chymicae in Regno Minerali: tum omnes in suo quiq[ue] genere Universales ejusdem Regni Mineralis Lapides, Tincturave particulares: cujus author, Nicolaus Niger Hapelius, Anagrammatizomenus.  Accessit tractatus Venceslai Lavinii, Moravi, De Cœlo terrestri, &c"],
+        "dates": ["1612"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.7667933, 50.8021728]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Paris",
+        "latitude": 48.856614,
+        "longitude": 2.3522219,
+        "books": ["Gallicae linguae institutio: Latino sermone conscripta [...]: nunc vero locupletata [...] (1563)"],
+        "titles": ["Gallicae linguae institutio: Latino sermone conscripta [...]: nunc vero locupletata [...]"],
+        "dates": ["1563"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.3522219, 48.856614]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "publication place": "Venice",
+        "latitude": 45.4408474,
+        "longitude": 12.3155151,
+        "books": ["Varietà  di secreti [. . . ]: ne' quali si contengono cose minerali, medecinali, profumi, belletti, artifitij, [et] alchimia: con altre bella curiosità aggiunte: di nuovo ristampati, [e] con somma diligenza corretti (1614)"],
+        "titles": ["Varietà  di secreti [. . . ]: ne' quali si contengono cose minerali, medecinali, profumi, belletti, artifitij, [et] alchimia: con altre bella curiosità aggiunte: di nuovo ristampati, [e] con somma diligenza corretti"],
+        "dates": ["1614"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3155151, 45.4408474]
+      }
+    }
+  ]
+}

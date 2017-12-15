@@ -1,0 +1,12 @@
+.navbar {
+  margin-bottom: 1rem;
+}
+
+#map {
+  height: 700px;
+  margin-bottom: 1rem;
+}
+
+.list-group-item {
+  font-size: 1rem;
+}
